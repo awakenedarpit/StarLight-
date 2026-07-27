@@ -1,0 +1,7 @@
+{
+  "bin": "main.go",
+  "name": "^C",
+  "author": "awakenedarpit",
+  "version": "1.0.0",
+  "license": "UNLICENCED"
+}
