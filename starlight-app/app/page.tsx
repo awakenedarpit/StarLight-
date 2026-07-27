@@ -1,3 +1,5 @@
+import Navbar from "@/components/landing/Navbar";
+
 export default function Home() {
   return (
     <main className="container min-h-screen flex items-center justify-center">
