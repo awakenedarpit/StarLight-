@@ -2,8 +2,22 @@ import Navbar from "@/components/landing/Navbar";
 
 export default function Home() {
   return (
-    <main className="container min-h-screen flex items-center justify-center">
-      <section className="text-center max-w-4xl">
+    <>
+  <Navbar />
+
+  <main
+    className="container"
+    style={{
+      minHeight: "100vh",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      paddingTop: "90px",
+    }}
+  >
+    {/* Keep your existing hero section here */}
+  </main>
+</>
 
         <p
           style={{
