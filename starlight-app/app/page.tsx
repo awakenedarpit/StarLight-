@@ -1,10 +1,12 @@
 import Navbar from "@/components/landing/Navbar";
 
+import Background from "@/components/landing/Background";
+
 export default function Home() {
   return (
     <>
       <Navbar />
-
+<Background />
       <main
         className="container"
         style={{
