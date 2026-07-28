@@ -8,6 +8,8 @@ import Stats from "@/components/landing/Stats";
 
 import HowItWorks from "@/components/landing/HowItWorks";
 
+import Themes from "@/components/landing/Themes";
+
 export default function Home() {
   return (
     <>
@@ -92,6 +94,7 @@ export default function Home() {
         </div>
             <Stats />
             <HowItWorks />
+            <Themes />
              <Features />
       </main>
     </>
