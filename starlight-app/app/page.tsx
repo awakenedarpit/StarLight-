@@ -3,22 +3,20 @@ import Navbar from "@/components/landing/Navbar";
 export default function Home() {
   return (
     <>
-  <Navbar />
+      <Navbar />
 
-  <main
-    className="container"
-    style={{
-      minHeight: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      paddingTop: "90px",
-    }}
-  >
-    {/* Keep your existing hero section here */}
-  </main>
-</>
-
+      <main
+        className="container"
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          paddingTop: "90px",
+        }}
+      >
         <p
           style={{
             color: "#38bdf8",
@@ -84,8 +82,7 @@ export default function Home() {
             ▶ Watch Demo
           </button>
         </div>
-
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
