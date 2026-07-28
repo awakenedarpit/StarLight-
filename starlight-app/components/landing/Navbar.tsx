@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
       return (
           <nav
@@ -31,9 +33,9 @@ export default function Navbar() {
                                                                                                                                                                                                                                                     ⭐ StarLight
                                                                                                                                                                                                                                                             </h2>
 
-                                                                                                                                                                                                                                                                    <button className="primary-btn">
-                                                                                                                                                                                                                                                                              Create Wish
-                                                                                                                                                                                                                                                                                      </button>
+                                                                                                                                                                                                                                                                    <Link href="/create" className="primary-btn">
+  Create Wish
+</Link>
                                                                                                                                                                                                                                                                                             </div>
                                                                                                                                                                                                                                                                                                 </nav>
                                                                                                                                                                                                                                                                                                   );

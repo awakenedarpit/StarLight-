@@ -10,6 +10,8 @@ import HowItWorks from "@/components/landing/HowItWorks";
 
 import Themes from "@/components/landing/Themes";
 
+import LivePreview from "@/components/landing/LivePreview";
+
 export default function Home() {
   return (
     <>
@@ -95,6 +97,7 @@ export default function Home() {
             <Stats />
             <HowItWorks />
             <Themes />
+            <LivePreview />
              <Features />
       </main>
     </>
