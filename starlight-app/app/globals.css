@@ -94,3 +94,54 @@ button{
 .secondary-btn:hover{
   background:rgba(255,255,255,.06);
 }
+
+
+
+.aurora{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(124,58,237,.30),transparent 40%),
+    radial-gradient(circle at 80% 30%,rgba(236,72,153,.25),transparent 40%),
+    radial-gradient(circle at 50% 80%,rgba(56,189,248,.20),transparent 40%);
+  animation:auroraMove 15s ease-in-out infinite alternate;
+}
+
+@keyframes auroraMove{
+  from{
+    transform:scale(1) rotate(0deg);
+  }
+  to{
+    transform:scale(1.2) rotate(6deg);
+  }
+}
+
+.stars{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.star{
+  position:absolute;
+  width:3px;
+  height:3px;
+  background:white;
+  border-radius:50%;
+  opacity:.8;
+  animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+  0%,100%{
+    opacity:.2;
+    transform:scale(1);
+  }
+
+  50%{
+    opacity:1;
+    transform:scale(1.8);
+  }
+}
