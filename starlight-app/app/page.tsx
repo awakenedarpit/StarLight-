@@ -4,6 +4,8 @@ import Background from "@/components/landing/Background";
 
 import Features from "@/components/landing/Features";
 
+import Stats from "@/components/landing/Stats";
+
 export default function Home() {
   return (
     <>
@@ -86,7 +88,8 @@ export default function Home() {
             ▶ Watch Demo
           </button>
         </div>
-<Features />
+            <Stats />
+             <Features />
       </main>
     </>
   );
