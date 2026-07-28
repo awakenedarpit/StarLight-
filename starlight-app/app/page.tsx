@@ -6,6 +6,8 @@ import Features from "@/components/landing/Features";
 
 import Stats from "@/components/landing/Stats";
 
+import HowItWorks from "@/components/landing/HowItWorks";
+
 export default function Home() {
   return (
     <>
@@ -89,6 +91,7 @@ export default function Home() {
           </button>
         </div>
             <Stats />
+            <HowItWorks />
              <Features />
       </main>
     </>
