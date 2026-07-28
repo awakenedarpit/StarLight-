@@ -1,4 +1,4 @@
-import WelcomeStep from "@/components/create/WelcomeStep";
+import Wizard from "@/components/creator/Wizard";
 
 export default function CreatePage() {
       return (
