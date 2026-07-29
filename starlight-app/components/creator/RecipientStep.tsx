@@ -1,40 +1,82 @@
+"use client";
+
 export default function RecipientStep() {
   return (
     <>
       <h2
         style={{
-          fontSize: "2rem",
-          marginBottom: "10px",
+          fontSize: "2.5rem",
+          marginBottom: "12px",
         }}
       >
-        Who is receiving this surprise?
+        Who is this surprise for? 🎉
       </h2>
 
       <p
         style={{
           color: "#94a3b8",
-          marginBottom: "30px",
+          marginBottom: "35px",
         }}
       >
-        Enter the recipient's details.
+        Tell us about the special person.
       </p>
 
-      <input
-        placeholder="Recipient Name"
+      <div
         style={{
-          width: "100%",
-          padding: "16px",
-          borderRadius: "12px",
-          border: "1px solid #334155",
-          background: "#1e293b",
-          color: "white",
-          marginBottom: "20px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
         }}
-      />
+      >
+        <input
+          placeholder="Recipient Name"
+          className="glass"
+          style={{
+            padding: "18px",
+            borderRadius: "16px",
+            fontSize: "1rem",
+            color: "white",
+            background: "rgba(255,255,255,.05)",
+            border: "1px solid rgba(255,255,255,.08)",
+          }}
+        />
 
-      <button className="primary-btn">
-        Continue →
-      </button>
+        <input
+          type="date"
+          className="glass"
+          style={{
+            padding: "18px",
+            borderRadius: "16px",
+            fontSize: "1rem",
+            color: "white",
+            background: "rgba(255,255,255,.05)",
+            border: "1px solid rgba(255,255,255,.08)",
+          }}
+        />
+
+        <textarea
+          placeholder="Write a short message..."
+          rows={5}
+          className="glass"
+          style={{
+            padding: "18px",
+            borderRadius: "16px",
+            fontSize: "1rem",
+            color: "white",
+            background: "rgba(255,255,255,.05)",
+            border: "1px solid rgba(255,255,255,.08)",
+          }}
+        />
+
+        <button
+          className="primary-btn"
+          style={{
+            marginTop: "20px",
+          }}
+        >
+          Continue →
+        </button>
+      </div>
     </>
   );
 }
