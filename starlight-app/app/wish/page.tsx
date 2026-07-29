@@ -19,7 +19,9 @@ export default function WishPage() {
                                                                           padding: "40px",
                                                                                 }}
                                                                                     >
-                                                                                          <div
+ 
+<FloatingStars />
+                                                                                         <div
                                                                                                   className="glass"
                                                                                                           style={{
                                                                                                                     width: "100%",
