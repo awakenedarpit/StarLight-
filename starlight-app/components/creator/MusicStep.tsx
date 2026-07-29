@@ -33,6 +33,25 @@ export default function MusicStep({
         Select the perfect soundtrack for the celebration.
       </p>
 
+<div
+  className="glass"
+  style={{
+    padding: "25px",
+    borderRadius: "20px",
+    marginBottom: "25px",
+  }}
+>
+  <h3>Select your own music</h3>
+
+  <input
+    type="file"
+    accept="audio/*"
+    style={{
+      marginTop: "20px",
+    }}
+  />
+</div>
+
       <div
         style={{
           display: "grid",
