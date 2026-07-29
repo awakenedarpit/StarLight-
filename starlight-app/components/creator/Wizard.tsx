@@ -1,5 +1,7 @@
 "use client";
 
+import PhotoStep from "./PhotoStep";
+
 import RecipientStep from "./RecipientStep";
 
 import { useState } from "react";
