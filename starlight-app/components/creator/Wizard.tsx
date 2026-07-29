@@ -1,5 +1,7 @@
 "use client";
 
+import MusicStep from "./MusicStep";
+
 import PhotoStep from "./PhotoStep";
 
 import RecipientStep from "./RecipientStep";
