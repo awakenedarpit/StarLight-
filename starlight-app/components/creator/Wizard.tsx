@@ -4,7 +4,7 @@ import RecipientStep from "./RecipientStep";
 
 import { useState } from "react";
 import WelcomeStep from "./WelcomeStep";
-import RecipientStep from "./RecipientStep";
+
 
 export default function Wizard() {
   const [step, setStep] = useState(1);
@@ -28,4 +28,6 @@ export default function Wizard() {
 
 {step === 2 && (
   <RecipientStep />
-)}
+)}</>
+);
+}
