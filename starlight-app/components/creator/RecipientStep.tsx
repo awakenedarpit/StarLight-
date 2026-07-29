@@ -73,13 +73,14 @@ export default function RecipientStep({
         />
 
         <button
-          className="primary-btn"
-          style={{
-            marginTop: "20px",
-          }}
-        >
-          Continue →
-        </button>
+  className="primary-btn"
+  onClick={onNext}
+  style={{
+    marginTop: "20px",
+  }}
+>
+  Continue →
+</button>
       </div>
     </>
   );
