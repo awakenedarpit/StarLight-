@@ -37,6 +37,10 @@ export default function Wizard() {
 {step === 3 && (
   <PhotoStep onNext={() => setStep(4)} />
 )}
+
+{step === 4 && (
+  <MusicStep onNext={() => setStep(5)} />
+)}
 </>
 );
 }
