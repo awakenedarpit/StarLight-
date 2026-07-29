@@ -1,4 +1,5 @@
 const celebrations = [
+
       { emoji: "🎂", title: "Birthday" },
         { emoji: "❤️", title: "Anniversary" },
           { emoji: "🎓", title: "Graduation" },
