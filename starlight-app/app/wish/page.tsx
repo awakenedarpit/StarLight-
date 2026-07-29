@@ -1,71 +1,68 @@
 "use client";
 
-const { wishData } = useWish();
-
 import { useWish } from "@/context/WishContext";
 
 import FloatingStars from "@/components/wish/FloatingStars";
-
 import MemoryGallery from "@/components/wish/MemoryGallery";
-
 import Letter from "@/components/wish/Letter";
-
 import GiftBox from "@/components/wish/GiftBox";
- 
+
 export default function WishPage() {
-      return (
-          <main
-                style={{
-                        minHeight: "100vh",
-                                background:
-                                          "linear-gradient(135deg,#0f172a,#1e293b,#312e81)",
-                                                  display: "flex",
-                                                          justifyContent: "center",
-                                                                  alignItems: "center",
-                                                                          padding: "40px",
-                                                                                }}
-                                                                                    >
- 
-<FloatingStars />
-                                                                                         <div
-                                                                                                  className="glass"
-                                                                                                          style={{
-                                                                                                                    width: "100%",
-                                                                                                                              maxWidth: "900px",
-                                                                                                                                        padding: "50px",
-                                                                                                                                                  borderRadius: "30px",
-                                                                                                                                                            textAlign: "center",
-                                                                                                                                                                    }}
-                                                                                                                                                                          >
-                                                                                                                                                                                  <h1 className="gradient-text">
-  🎂 Happy Birthday {wishData.recipient || "Friend"}!
-</h1>
+  const { wishData } = useWish();
 
-                                                                                                                                                                                                                                                              <p
-                                                                                                                                                                                                                                                                        style={{
-                                                                                                                                                                                                                                                                                    color: "#cbd5e1",
-                                                                                                                                                                                                                                                                                                marginTop: "20px",
-                                                                                                                                                                                                                                                                                                            fontSize: "1.2rem",
-                                                                                                                                                                                                                                                                                                                      }}
-                                                                                                                                                                                                                                                                                                                              >
-                                                                                                                                                                                                                                                                                                                                        Every wish becomes a memory.
-                                                                                                                                                                                                                                                                                                                                                </p>
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        background:
+          "linear-gradient(135deg,#0f172a,#1e293b,#312e81)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "40px",
+      }}
+    >
+      <FloatingStars />
 
-                                                                                                                                                                                                                                                                                                                                                        <div
-                                                                                                                                                                                                                                                                                                                                                                  style={{
-                                                                                                                                                                                                                                                                                                                                                                              fontSize: "6rem",
-                                                                                                                                                                                                                                                                                                                                                                                          margin: "40px 0",
-                                                                                                                                                                                                                                                                                                                                                                                                    }}
-                                                                                                                                                                                                                                                                                                                                                                                                            >
-                                                                                                                                                                                                                                                                                                                                                                                                                      🎉
-                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+      <div
+        className="glass"
+        style={{
+          width: "100%",
+          maxWidth: "900px",
+          padding: "50px",
+          borderRadius: "30px",
+          textAlign: "center",
+        }}
+      >
+        <h1 className="gradient-text">
+          🎂 Happy Birthday {wishData.recipient || "Friend"}!
+        </h1>
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                      <GiftBox />
+        <p
+          style={{
+            color: "#cbd5e1",
+            marginTop: "20px",
+            fontSize: "1.2rem",
+          }}
+        >
+          Every wish becomes a memory.
+        </p>
 
-<Letter />
+        <div
+          style={{
+            fontSize: "6rem",
+            margin: "40px 0",
+          }}
+        >
+          🎉
+        </div>
 
-<MemoryGallery />
-                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </main>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    );
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+        <GiftBox />
+
+        <Letter />
+
+        <MemoryGallery />
+      </div>
+    </main>
+  );
+}
