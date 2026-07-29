@@ -1,3 +1,9 @@
+import FloatingStars from "@/components/wish/FloatingStars";
+
+import MemoryGallery from "@/components/wish/MemoryGallery";
+
+import Letter from "@/components/wish/Letter";
+
 import GiftBox from "@/components/wish/GiftBox";
  
 export default function WishPage() {
@@ -13,7 +19,9 @@ export default function WishPage() {
                                                                           padding: "40px",
                                                                                 }}
                                                                                     >
-                                                                                          <div
+ 
+<FloatingStars />
+                                                                                         <div
                                                                                                   className="glass"
                                                                                                           style={{
                                                                                                                     width: "100%",
@@ -52,6 +60,10 @@ export default function WishPage() {
                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
 
                                                                                                                                                                                                                                                                                                                                                                                                                                       <GiftBox />
+
+<Letter />
+
+<MemoryGallery />
                                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </main>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                     );
