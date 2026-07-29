@@ -1,3 +1,5 @@
+import Letter from "@/components/wish/Letter";
+
 import GiftBox from "@/components/wish/GiftBox";
  
 export default function WishPage() {
