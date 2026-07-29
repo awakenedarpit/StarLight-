@@ -1,5 +1,7 @@
 "use client";
 
+import ProgressBar from "../ui/ProgressBar";
+
 import MusicStep from "./MusicStep";
 
 import PhotoStep from "./PhotoStep";
