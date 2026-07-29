@@ -1,15 +1,14 @@
-import { useWish } from "@/context/WishContext";
-
 "use client";
 
+import { useWish } from "@/context/WishContext";
+
 export default function RecipientStep({
-
-const { wishData, setWishData } = useWish();
-
   onNext,
 }: {
   onNext: () => void;
 }) {
+  const { wishData, setWishData } = useWish();
+
   return (
     <>
       <h2
@@ -38,25 +37,25 @@ const { wishData, setWishData } = useWish();
         }}
       >
         <input
-  type="text"
-  placeholder="Recipient Name"
-  value={wishData.recipient}
-  onChange={(e) =>
-    setWishData({
-      ...wishData,
-      recipient: e.target.value,
-    })
-  }
-  style={{
-    width: "100%",
-    padding: "18px",
-    marginBottom: "20px",
-    borderRadius: "16px",
-    border: "1px solid rgba(255,255,255,.1)",
-    background: "rgba(255,255,255,.05)",
-    color: "white",
-  }}
-/>
+          type="text"
+          placeholder="Recipient Name"
+          value={wishData.recipient}
+          onChange={(e) =>
+            setWishData({
+              ...wishData,
+              recipient: e.target.value,
+            })
+          }
+          style={{
+            width: "100%",
+            padding: "18px",
+            marginBottom: "20px",
+            borderRadius: "16px",
+            border: "1px solid rgba(255,255,255,.1)",
+            background: "rgba(255,255,255,.05)",
+            color: "white",
+          }}
+        />
 
         <input
           type="date"
@@ -86,14 +85,14 @@ const { wishData, setWishData } = useWish();
         />
 
         <button
-  className="primary-btn"
-  onClick={onNext}
-  style={{
-    marginTop: "20px",
-  }}
->
-  Continue →
-</button>
+          className="primary-btn"
+          onClick={onNext}
+          style={{
+            marginTop: "20px",
+          }}
+        >
+          Continue →
+        </button>
       </div>
     </>
   );
