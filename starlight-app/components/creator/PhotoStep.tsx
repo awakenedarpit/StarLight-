@@ -1,6 +1,10 @@
 "use client";
 
-export default function PhotoStep() {
+export default function PhotoStep({
+  onNext,
+}: {
+  onNext: () => void;
+}) {
   return (
     <>
       <h2
