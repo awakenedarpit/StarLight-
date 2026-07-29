@@ -1,5 +1,7 @@
 "use client";
 
+import RecipientStep from "./RecipientStep";
+
 import { useState } from "react";
 import WelcomeStep from "./WelcomeStep";
 import RecipientStep from "./RecipientStep";
