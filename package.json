@@ -3,5 +3,9 @@
   "name": "^C",
   "author": "awakenedarpit",
   "version": "1.0.0",
-  "license": "UNLICENCED"
+  "license": "UNLICENCED",
+  "dependencies": {
+    "react-canvas-confetti": "^2.0.7",
+    "react-confetti": "^6.4.0"
+  }
 }
