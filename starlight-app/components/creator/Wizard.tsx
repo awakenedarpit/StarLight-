@@ -33,7 +33,7 @@ export default function Wizard() {
 )}
 
 {step === 3 && (
-  <PhotoStep />
+  <PhotoStep onNext={() => setStep(4)} />
 )}
 </>
 );
