@@ -7,7 +7,11 @@ const celebrations = [
               { emoji: "🎉", title: "Other" },
               ];
 
-              export default function WelcomeStep() {
+              export default function WelcomeStep({
+  onNext,
+}: {
+  onNext: () => void;
+}) {
                 return (
                     <>
                           <h2
