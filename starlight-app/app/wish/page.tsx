@@ -1,3 +1,7 @@
+"use client";
+
+const { wishData } = useWish();
+
 import { useWish } from "@/context/WishContext";
 
 import FloatingStars from "@/components/wish/FloatingStars";
@@ -33,14 +37,9 @@ export default function WishPage() {
                                                                                                                                                             textAlign: "center",
                                                                                                                                                                     }}
                                                                                                                                                                           >
-                                                                                                                                                                                  <h1
-                                                                                                                                                                                            className="gradient-text"
-                                                                                                                                                                                                      style={{
-                                                                                                                                                                                                                  fontSize: "3.5rem",
-                                                                                                                                                                                                                            }}
-                                                                                                                                                                                                                                    >
-                                                                                                                                                                                                                                              🎂 Happy Birthday!
-                                                                                                                                                                                                                                                      </h1>
+                                                                                                                                                                                  <h1 className="gradient-text">
+  🎂 Happy Birthday {wishData.recipient || "Friend"}!
+</h1>
 
                                                                                                                                                                                                                                                               <p
                                                                                                                                                                                                                                                                         style={{
