@@ -29,7 +29,7 @@ export default function Wizard() {
 )}
 
 {step === 2 && (
-  <RecipientStep />
+  <RecipientStep onNext={() => setStep(3)} />
 )}
 
 {step === 3 && (
