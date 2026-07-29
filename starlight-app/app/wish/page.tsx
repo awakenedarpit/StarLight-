@@ -1,3 +1,5 @@
+import GiftBox from "@/components/wish/GiftBox";
+ 
 export default function WishPage() {
       return (
           <main
