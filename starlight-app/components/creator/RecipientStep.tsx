@@ -1,3 +1,5 @@
+import { useWish } from "@/context/WishContext";
+
 "use client";
 
 export default function RecipientStep({
