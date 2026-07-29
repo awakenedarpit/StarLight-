@@ -61,6 +61,7 @@ export default function PhotoStep({
 
       <button
         className="primary-btn"
+        onClick={onNext}
         style={{
           marginTop: "35px",
         }}
