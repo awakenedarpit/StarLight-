@@ -23,14 +23,9 @@ export default function Wizard() {
       </div>
 
       {step === 1 && (
-        <WelcomeStep
-          onNext={() => setStep(2)}
-        />
-      )}
+  <WelcomeStep onNext={() => setStep(2)} />
+)}
 
-      {step === 2 && (
-        <RecipientStep />
-      )}
-    </>
-  );
-}
+{step === 2 && (
+  <RecipientStep />
+)}
