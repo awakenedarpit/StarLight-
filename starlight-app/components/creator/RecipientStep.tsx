@@ -1,6 +1,10 @@
 "use client";
 
-export default function RecipientStep() {
+export default function RecipientStep({
+  onNext,
+}: {
+  onNext: () => void;
+}) {
   return (
     <>
       <h2
