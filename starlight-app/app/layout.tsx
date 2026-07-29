@@ -30,8 +30,10 @@ const poppins = Poppins({
                     return (
                         <html lang="en">
                               <body className={`${poppins.variable} ${inter.variable}`}>
-                                      {children}
-                                            </body>
+  <WishProvider>
+    {children}
+  </WishProvider>
+</body>
                                                 </html>
                                                   );
                                                   }
