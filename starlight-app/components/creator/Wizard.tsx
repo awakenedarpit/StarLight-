@@ -30,6 +30,11 @@ export default function Wizard() {
 
 {step === 2 && (
   <RecipientStep />
-)}</>
+)}
+
+{step === 3 && (
+  <PhotoStep />
+)}
+</>
 );
 }
