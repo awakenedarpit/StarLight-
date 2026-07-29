@@ -1,3 +1,5 @@
+import MemoryGallery from "@/components/wish/MemoryGallery";
+
 import Letter from "@/components/wish/Letter";
 
 import GiftBox from "@/components/wish/GiftBox";
