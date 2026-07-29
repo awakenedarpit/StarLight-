@@ -1,3 +1,5 @@
+import { useWish } from "@/context/WishContext";
+
 import FloatingStars from "@/components/wish/FloatingStars";
 
 import MemoryGallery from "@/components/wish/MemoryGallery";
