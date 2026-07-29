@@ -44,6 +44,7 @@ const celebrations = [
   <button
     key={item.title}
     className="glass"
+    onClick={onNext}
     style={{
       padding: "35px 20px",
       borderRadius: "24px",
