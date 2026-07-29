@@ -1,3 +1,5 @@
+import FloatingStars from "@/components/wish/FloatingStars";
+
 import MemoryGallery from "@/components/wish/MemoryGallery";
 
 import Letter from "@/components/wish/Letter";
